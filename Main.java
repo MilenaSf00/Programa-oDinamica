@@ -1,7 +1,16 @@
-
+/**
+ * A classe Main é responsável por interagir com o usuário, solicitando o número de casos de teste,
+ * altura e largura da parede e exibindo os resultados obtidos pelo método legoBlocks da classe Resultado.
+ */
 import java.util.Scanner;
 
 public class Main {
+     /**
+     * Método principal que solicita ao usuário o número de casos de teste, altura e largura da parede
+     * e exibe os resultados para cada caso de teste.
+     *
+     * @param args Argumentos da linha de comando.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

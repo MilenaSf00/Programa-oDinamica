@@ -1,17 +1,21 @@
-
-//Recebe a altura (altura) e a largura (largura) como parâmetros e retorna um inteiro.
-//Cria um array linha para armazenar as contagens de diferentes larguras.
-//Inicializa linha[1], linha[2], linha[3], e linha[4] conforme as regras do problema.
-// loop para calcular linha[i] para i de 5 até a largura (largura). Cada valor é a soma dos quatro valores anteriores, mantendo o resultado módulo MODULO.
-// array totalPorLargura e inicializa com os valores de linha.dois loops para considerar a altura. Multiplica linha[i] pelo valor atual de totalPorLargura[i], mantendo o resultado módulo MODULO.
-//array estruturaSolida e inicializa estruturaSolida[1] como 1.
-//Utiliza um loop para calcular estruturaSolida[larguraAtual] para larguraAtual de 2 até a largura (largura).
-//Retorna estruturaSolida[largura], que representa o número de maneiras de construir uma parede sólida com a altura e largura especificadas.
+/**
+ * A classe Resultado fornece um método estático para calcular o número de maneiras de construir uma parede sólida
+ * com base nas regras do problema relacionado a blocos de Lego.
+ */
 public class Resultado {
+     /**
+     * Representa o módulo usado nas operações, definido como 1_000_000_007.
+     */
     static final int MODULO = 1_000_000_007;
-
+/**
+     * Calcula o número de maneiras de construir uma parede sólida com a altura e largura especificadas,
+     * utilizando blocos de Lego de diferentes larguras.
+     *
+     * @param altura  A altura desejada da parede.
+     * @param largura A largura desejada da parede.
+     * @return O número de maneiras de construir a parede sólida.
+     */
     public static int legoBlocks(int altura, int largura) {
-        // Inicialização da contagem para diferentes larguras
         int[] linha = new int[largura + 1];
         linha[1] = 1;
         if (largura >= 2)
