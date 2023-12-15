@@ -1,5 +1,6 @@
 
 <h1> Lego Blocks - Programação Dinâmica</h1>
+<p>	O problema “Lego Blocks” ou Blocos de legos, envolve a construção de uma parede de blocos de Lego de diferentes tamanhos, onde cada bloco tem sua especificação em três dimensões nas quais destacam-se: profundidade, largura e altura. O objetivo desse problema é determinar de quantas maneiras diferentes é possível construir uma parede com altura(n) e largura(m) específicas.<p>
 
 <h2> Configuração do Ambiente </h2>
 <p>O código foi desenvolvido em java então certifique-se de configurar o ambiente para compilar o código corretamente.</p>
