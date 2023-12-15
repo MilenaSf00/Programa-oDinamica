@@ -1,3 +1,4 @@
+
 /**
  * A classe Resultado fornece um método estático para calcular o número de maneiras de construir uma parede sólida
  * com base nas regras do problema relacionado a blocos de Lego.
@@ -6,19 +7,17 @@ import java.util.logging.Logger;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 
-
-
-
 public class Resultado {
-     /**
+    /**
      * Representa o módulo usado nas operações, definido como 1_000_000_007.
      */
-   
     static final int MODULO = 1_000_000_007;
-/**
-     * Calcula o número de maneiras de construir uma parede sólida com a altura e largura especificadas,
+
+    /**
+     * Calcula o número de maneiras de construir uma parede sólida com a altura e
+     * largura especificadas,
      * utilizando blocos de Lego de diferentes larguras.
-     *
+     * 
      * @param altura  A altura desejada da parede.
      * @param largura A largura desejada da parede.
      * @return O número de maneiras de construir a parede sólida.
@@ -56,13 +55,9 @@ public class Resultado {
             }
             estruturaSolida[larguraAtual] = (totalPorLargura[larguraAtual] - somaNaoSolida + MODULO) % MODULO;
         }
-
         long endTime = System.currentTimeMillis();
         long executionTime = endTime - startTime;
         Logger.getLogger(Resultado.class.getName()).info("Tempo de execução: " + executionTime + " milissegundos");
-
-
         return estruturaSolida[largura];
     }
-
 }
